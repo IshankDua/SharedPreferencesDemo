@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent">
+
+
+        <EditText
+            android:id="@+id/idName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/idName"
+        android:id="@+id/idBtnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Save To File" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/idBtnSave"
+        android:id="@+id/idBtnRead"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Read File" />
+
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/idBtnRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:id="@+id/idReadTxt"/>
+
+</RelativeLayout>
